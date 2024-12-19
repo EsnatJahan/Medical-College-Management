@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="200.0" prefWidth="217.0" stylesheets="@../image/css.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medicalcollege.facultyController">
+   <children>
+      <HBox alignment="CENTER_RIGHT" layoutX="16.0" layoutY="10.0" prefHeight="180.0" prefWidth="283.0">
+         <children>
+            <VBox prefHeight="180.0" prefWidth="141.0">
+               <children>
+                  <Label fx:id="name" text="Dr. Esrat Jahan Ena" wrapText="true">
+                     <font>
+                        <Font name="Agency FB" size="24.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="role" lineSpacing="10.0" prefHeight="27.0" prefWidth="58.0" text="Professor">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/telephone.png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="contact" lineSpacing="10.0" prefHeight="27.0" prefWidth="95.0" text="01644529856" />
+                  <ImageView fitHeight="20.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../image/email (1).png" />
+                     </image>
+                  </ImageView>
+                  <Label fx:id="email" layoutX="10.0" layoutY="95.0" lineSpacing="10.0" prefHeight="27.0" prefWidth="137.0" text="u2004100@faculty.ac,bd" />
+               </children>
+            </VBox>
+            <ImageView fx:id="image" fitHeight="150.0" fitWidth="150.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../image/doctor.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+   </children>
+</Pane>

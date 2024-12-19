@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane hbarPolicy="NEVER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1100.0" vbarPolicy="ALWAYS" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="1000.0" prefWidth="1100.0" styleClass="dark-background" stylesheets="@../image/css.css">
+            <children>
+                <VBox prefHeight="205.0" prefWidth="1100.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="1100.0" spacing="5.0" styleClass="mouse-moved-red" stylesheets="@../image/css.css">
+                            <children>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/book.png" />
+                                    </image>
+                                </ImageView>
+                                <Label alignment="BOTTOM_LEFT" prefHeight="39.0" prefWidth="183.0" text="Assigned Courses" textFill="#8f8f8f">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </HBox>
+                        <TableView prefHeight="157.0" prefWidth="1100.0" styleClass="dark-background">
+                            <columns>
+                                <TableColumn prefWidth="1100.0" text="Assigned Courses" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+                <VBox layoutX="-1.0" layoutY="208.0" prefHeight="246.0" prefWidth="1100.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="247.0" spacing="5.0" styleClass="mouse-moved-red" stylesheets="@../image/css.css">
+                            <children>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/book.png" />
+                                    </image>
+                                </ImageView>
+                                <Label alignment="BOTTOM_LEFT" prefHeight="39.0" prefWidth="183.0" text="Hall Information" textFill="#8f8f8f">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </HBox>
+                        <TableView prefHeight="207.0" prefWidth="1100.0" styleClass="dark-background">
+                            <columns>
+                                <TableColumn prefWidth="286.6666564941406" text="Hall Name" />
+                                <TableColumn minWidth="0.0" prefWidth="279.3334045410156" text="Rooms" />
+                                <TableColumn minWidth="0.0" prefWidth="220.0" text="Contacts" />
+                                <TableColumn minWidth="0.0" prefWidth="313.33331298828125" text="Location" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+                <VBox layoutX="-1.0" layoutY="449.0" prefHeight="200.0" prefWidth="1100.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="247.0" spacing="5.0" styleClass="mouse-moved-red" stylesheets="@../image/css.css">
+                            <children>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/book.png" />
+                                    </image>
+                                </ImageView>
+                                <Label alignment="BOTTOM_LEFT" prefHeight="39.0" prefWidth="183.0" text="Equipments" textFill="#8f8f8f">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </HBox>
+                        <TableView prefHeight="140.0" prefWidth="663.0" styleClass="dark-background">
+                            <columns>
+                                <TableColumn prefWidth="331.33331298828125" text="Equipment Name" />
+                                <TableColumn prefWidth="208.00003051757812" text="Date of Buy" />
+                                <TableColumn prefWidth="174.00003051757812" text="Expairy Date" />
+                                <TableColumn prefWidth="174.66665649414062" text="Quantity" />
+                                <TableColumn prefWidth="201.333251953125" text="Warranty" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+                <VBox layoutX="-2.0" layoutY="654.0" prefHeight="200.0" prefWidth="1100.0">
+                    <children>
+                        <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="247.0" spacing="5.0" styleClass="mouse-moved-red" stylesheets="@../image/css.css">
+                            <children>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../image/book.png" />
+                                    </image>
+                                </ImageView>
+                                <Label alignment="BOTTOM_LEFT" prefHeight="39.0" prefWidth="183.0" text="Labs" textFill="#8f8f8f">
+                                    <font>
+                                        <Font name="System Bold" size="18.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                            <padding>
+                                <Insets left="10.0" />
+                            </padding>
+                        </HBox>
+                        <TableView prefHeight="140.0" prefWidth="663.0" styleClass="dark-background">
+                            <columns>
+                                <TableColumn prefWidth="331.33331298828125" text="Equipment Name" />
+                                <TableColumn prefWidth="208.00003051757812" text="Date of Buy" />
+                                <TableColumn prefWidth="174.00003051757812" text="Expairy Date" />
+                                <TableColumn prefWidth="174.66665649414062" text="Quantity" />
+                                <TableColumn prefWidth="201.333251953125" text="Warranty" />
+                            </columns>
+                        </TableView>
+                    </children>
+                </VBox>
+            </children></AnchorPane>
+    </content>
+</ScrollPane>

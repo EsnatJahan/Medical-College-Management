@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="580.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medicalcollege.NoticeController">
+    <children>
+        <ScrollPane prefHeight="580.0" prefWidth="1129.0" style="-fx-border-width: 0px 0px 0px 0px;">
+            <content>
+                <VBox fx:id="noticeLayout" prefHeight="657.0" prefWidth="1117.0" style="-fx-background-color: #282828;">
+                    <children>
+                  <HBox alignment="TOP_CENTER" prefHeight="55.0" prefWidth="1117.0" spacing="10.0">
+                     <children>
+                        <Label layoutX="10.0" layoutY="10.0" text="Filter by Course: " textFill="#b1b1b1">
+                           <font>
+                              <Font name="System Bold" size="14.0" />
+                           </font>
+                        </Label>
+                        <TextField layoutX="87.0" layoutY="10.0" prefHeight="25.0" prefWidth="219.0" />
+                        <Button layoutX="236.0" layoutY="10.0" mnemonicParsing="false" style="-fx-border-radius: 15;" text="Search" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Button>
+                     </children>
+                     <padding>
+                        <Insets top="20.0" />
+                     </padding>
+                  </HBox>
+                        <HBox prefHeight="36.0" prefWidth="601.0" style="-fx-background-color: #999999; -fx-border-color: BLACK; -fx-border-width: 0px 0px 2px 0px;">
+                            <children>
+                                <Label alignment="CENTER" prefHeight="34.0" prefWidth="150.0" style="-fx-background-color: #37474f; -fx-border-width: 0px. 2px,0,px, 0 px; -fx-background-boarder_color: WHITE;" stylesheets="@../image/css.css" text="Date" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                        <Label alignment="CENTER" prefHeight="34.0" prefWidth="275.0" style="-fx-background-color: #37474f; -fx-border-width: 0px. 2px,0,px, 0 px; -fx-background-boarder_color: WHITE;" stylesheets="@../image/css.css" text="Summary" textFill="WHITE">
+                           <font>
+                              <Font size="14.0" />
+                           </font>
+                        </Label>
+                                <Label alignment="CENTER" layoutX="10.0" layoutY="10.0" prefHeight="34.0" prefWidth="726.0" style="-fx-background-color: #37474f; -fx-border-width: 0px. px,0,px, 0 px;" stylesheets="@../image/css.css" text="Heading" textFill="WHITE">
+                                    <font>
+                                        <Font size="14.0" />
+                                    </font>
+                                </Label>
+                            </children>
+                        </HBox>
+                    </children>
+                    <opaqueInsets>
+                        <Insets top="5.0" />
+                    </opaqueInsets>
+                </VBox>
+            </content>
+        </ScrollPane>
+    </children>
+</AnchorPane>

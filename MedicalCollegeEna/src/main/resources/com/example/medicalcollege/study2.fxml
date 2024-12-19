@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<ScrollPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="580.0" prefWidth="1100.0" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medicalcollege.study2Controller">
+  <content>
+    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="580.0" prefWidth="1100.0" styleClass="dark-background" stylesheets="@../image/css.css">
+         <children>
+            <VBox prefHeight="205.0" prefWidth="1100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="1100.0" spacing="5.0" styleClass="mouse-moved-red" stylesheets="@../image/css.css">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/book.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="39.0" prefWidth="183.0" text="Assigned Courses" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <TableView prefHeight="157.0" prefWidth="1100.0" styleClass="dark-background" stylesheets="@../image/css.css">
+                    <columns>
+                      <TableColumn prefWidth="1100.0" style="-fx-background-color: Gray;" text="Course Names" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox layoutX="-1.0" layoutY="208.0" prefHeight="229.0" prefWidth="1100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="41.0" prefWidth="247.0" spacing="5.0" styleClass="mouse-moved-red" stylesheets="@../image/css.css">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/book.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="39.0" prefWidth="183.0" text="Hall Information" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <TableView onSort="#info" prefHeight="200.0" prefWidth="200.0" styleClass="dark-background" stylesheets="@../image/css.css">
+                    <columns>
+                      <TableColumn fx:id="showname" prefWidth="286.6666564941406" style="-fx-background-color: Gray;" text="Hall Name" />
+                      <TableColumn fx:id="showrm" minWidth="0.0" prefWidth="279.3334045410156" style="-fx-background-color: Gray;" text="Rooms" />
+                        <TableColumn fx:id="showcont" minWidth="0.0" prefWidth="220.0" style="-fx-background-color: Gray;" text="Contacts" />
+                        <TableColumn fx:id="showhall" minWidth="0.0" prefWidth="313.33331298828125" style="-fx-background-color: Gray;" text="Location" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <Separator layoutX="13.0" layoutY="207.0" prefHeight="7.0" prefWidth="1109.0" />
+            <VBox layoutX="-1.0" layoutY="439.0" prefHeight="167.0" prefWidth="1100.0">
+               <children>
+                  <HBox alignment="CENTER_LEFT" prefHeight="5.0" prefWidth="1100.0" spacing="5.0" style="-fx-background-color: Gray;" styleClass="mouse-moved-red" stylesheets="@../image/css.css">
+                     <children>
+                        <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../image/book.png" />
+                           </image>
+                        </ImageView>
+                        <Label alignment="BOTTOM_LEFT" prefHeight="39.0" prefWidth="183.0" text="Equipments" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="18.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <padding>
+                        <Insets left="10.0" />
+                     </padding>
+                  </HBox>
+                  <TableView prefHeight="149.0" prefWidth="1100.0" styleClass="dark-background" stylesheets="@../image/css.css">
+                     <columns>
+                        <TableColumn prefWidth="331.33331298828125" style="-fx-background-color: Gray;" text="Equipment Name" />
+                        <TableColumn prefWidth="208.00003051757812" style="-fx-background-color: Gray;" text="Date of Buy" />
+                        <TableColumn prefWidth="174.00003051757812" style="fx-background-color: RED;" text="Expairy Date" />
+                        <TableColumn prefWidth="174.66665649414062" style="-fx-background-color: Gray;" text="Quantity" />
+                        <TableColumn prefWidth="201.333251953125" style="-fx-background-color: Gray;" text="Warranty" />
+                     </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children></AnchorPane>
+  </content>
+</ScrollPane>

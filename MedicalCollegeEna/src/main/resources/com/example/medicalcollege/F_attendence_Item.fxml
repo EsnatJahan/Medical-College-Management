@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox prefHeight="39.0" prefWidth="1100.0" styleClass="mouse-moved-ash" stylesheets="@../image/css.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medicalcollege.TeacherContact_ItemController">
+   <children>
+      <ImageView fx:id="img" fitHeight="100.0" fitWidth="100.0" pickOnBounds="true" preserveRatio="true">
+         <HBox.margin>
+            <Insets bottom="5.0" left="10.0" right="30.0" top="5.0" />
+         </HBox.margin>
+         <image>
+            <Image url="@../image/doctor.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="name" alignment="CENTER" prefHeight="111.0" prefWidth="205.0" text="G M Faysal Taysir" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="number" alignment="CENTER" layoutX="150.0" layoutY="10.0" prefHeight="111.0" prefWidth="190.0" text="01644529856" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="email" alignment="CENTER" layoutX="355.0" layoutY="10.0" prefHeight="111.0" prefWidth="238.0" text="faysaltaysir15@gmail.com" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="department" alignment="CENTER" layoutX="561.0" layoutY="10.0" prefHeight="111.0" prefWidth="237.0" text="Computer Science" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="srl" alignment="CENTER" layoutX="783.0" layoutY="10.0" prefHeight="111.0" prefWidth="81.0" text="01" textFill="WHITE">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</HBox>

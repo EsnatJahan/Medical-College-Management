@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<HBox alignment="CENTER" prefHeight="171.0" prefWidth="1100.0" styleClass="mouse-moved-ash" stylesheets="@../image/css.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.medicalcollege.NoticeItemController">
+   <children>
+      <Label fx:id="date" alignment="CENTER" prefHeight="75.0" prefWidth="150.0" text="22 Nov 2023" textFill="#26ff00">
+         <font>
+            <Font name="Agency FB" size="24.0" />
+         </font>
+      </Label>
+      <VBox alignment="CENTER" prefHeight="82.0" prefWidth="240.0">
+         <children>
+            <Label fx:id="heading" alignment="CENTER" prefHeight="39.0" prefWidth="365.0" text="ClassTest Update" textFill="WHITE" underline="true" wrapText="true">
+               <font>
+                  <Font name="Book Antiqua Bold" size="24.0" />
+               </font>
+            </Label>
+            <Label fx:id="subject" alignment="CENTER" prefHeight="35.0" prefWidth="240.0" text="Anatomy and Physiology" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Bodoni MT" size="18.0" />
+               </font>
+            </Label>
+            <Label fx:id="teacher" alignment="CENTER" prefHeight="39.0" prefWidth="243.0" text="Dr. Fahmi Lal Datto" textFill="WHITE" wrapText="true">
+               <font>
+                  <Font name="Bookman Old Style" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </VBox>
+      <Label fx:id="dept" alignment="CENTER" layoutX="783.0" layoutY="10.0" prefHeight="161.0" prefWidth="689.0" text="FST" textAlignment="CENTER" textFill="#fbff00" wrapText="true">
+         <font>
+            <Font size="18.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="20.0" />
+         </HBox.margin>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</HBox>
