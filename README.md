@@ -2,7 +2,7 @@
 
 
 
-| ![Image 1](medimg/img1.png) | ![Image 2](medimg/img2.png) ![Image3](medimg/img3.png) |  
+| ![Image 1](medimg/img1.png)  ![Image 7](medimg/img7.png) | ![Image 2](medimg/img2.png) ![Image3](medimg/img3.png) |  
 |---------------------------------------------------------|----------------------------|
 |
 
