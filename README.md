@@ -2,7 +2,7 @@
 
 
 
-| ![Image 1](medicalimg/Screenshot 2024-12-19 220732.png) | ![Image 2](medicalimg/Screenshot 2024-12-19 215456.png) |  
+| ![Image 1](medimg/img1.png) | ![Image 2](medimg/img2.png) |  
 |---------------------------------------------------------|---------------------------------------------------------|
 |
 
